@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sobre Listas | HTML </title>
+
+</head>
+
+<body>
+<h1> O que são listas no HTML ?</h1>
+    <p> Uma lista é uma sequencia de itens relacionado entre si. </p>
+<p> No HTML, existem principalmente <strong> tres tipos de listas . </strong> <em> Listas não ordenadas </em>, <em> listas de descrição </em>. </p>
+<hr>
+
+<h2> Lista não ordenada (ul) </h2>
+<p> Uma lista não ordenada é usada quando a ordem dos elementos/itens não importa </p>
+
+<!-- ul/unordered List = Lista não ordenada -->
+<ul>  
+    <li> Arooz </li>
+    <li> Feijão </li>
+    <li> Macarrão </li>
+    <li> Carne </li>
+    <li> Café </li>
+</ul>
+
+<h2> Lista ordenada (ol) </h2>
+<p> Usamos uma lista ordenada quando os itens possuem uma sequencia, uma classificação ou uma ordem que precisa ser respeitada. </p>
+
+<!-- ol/Ordered List = Lista ordenada -->
+<ol>
+  <li> Ferver a água </li>
+  <li> Colocar o café no filtro </li>
+  <li> Despejar a água quente </li>
+  <li> Servir o café </li>
+</ol>
+
+
+<h2> Lista de descrição (dl) </h2>
+<p> Usamos uma lista de descrição quando precisamos descrever algum termo. </p>
+
+<p> Para criarmos essa lista, utilizamos tres elementos: </p>
+<ul>
+    <li> <strong> DL(description list) </strong>: Representa a lista de descrição </li>
+    <li> <strong> DT(description term) </strong>: Representa o termo </li>
+    <li> <strong> DD(data description) </strong>: Representa a descrição do termo </li>
+</ul>
+
+<h3> Criando a lista de descrição </h3>
+<dl>
+<dt> HTML </dt>
+<DD> Linguagem usada para estruturar página da web </DD>
+
+<dt> CSS </dt>
+<dd> linguagem usada para estilizar páginas da web </dd>
+
+<dt> JavaScript </dt>
+<dd> Linguagem usada para adicionar interatividade as páginas da web </dd>
+</dl>
+
+<hr>
+
+<h2> Explorando ainda mais as listas </h2>
+<h3> Listas aninhadas </h3>
+<p> Listas aninhadas são listas dentro de listas </p>
+
+<ul>
+<li>
+<strong> FrontEnd </strong>
+<ul>
+    <li> HTML </li>
+    <li> CSS </li>
+    <li> JavaScript </li>
+</ul>
+</li>
+
+<li> <strong> BackEnd </strong> </li>
+  <ul>
+     <li> Java </li>
+     <li> PostgresSQL </li>
+     <li> API </li>
+  </ul>
+
+</ul>
+
+<h3> Formatando listas </h3>
+<!-- Atributo type - Serve para alterarmos a exibição dos itens da lista. Não é mais recomendado utilizar esse atributo. O ideal é que seja feito pelo CSS. -->
+  <ul type="square" > 
+    <li>Thomas Pires </li>
+    <li> Terezinha Pires </li>
+    <li> Lord Borja </li>
+  </ul>
+
+<ol type="I" start="" > 
+    <li> HTML </li>
+    <li> CSS </li>
+    <li> JavaScript </li>
+</ol>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="=description" content=" Conhecendo a estrutura do elemento de formulário no HTML5. ">
+    <title> Sobre Formulários | HTML </title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: #1c1c1c;
+            color: bisque;
+        }
+
+        section{
+            background-color: darkslategray;
+            padding: 16px;
+            margin-bottom: 16px;
+            border-radius: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Formulários HTML </h1>
+    </header>
+
+    <main>
+        <section>
+            <h2> O que são Formulários no HTML? </h2>
+            <p> Os formulários são uma das partes mais impostantes do HTML, pois ajudam a introduzir uma ideia diferente. </p>
+            <p> O usuário deixa de apenas consumir conteúdo e passa a fornecer dados para o sistema </p>
+
+            <p> Um formulário, de forma resumida, é uma área da página destinada a coleta de informações. </p>
+
+            <p> Exemplos de uso: </p>
+            <ul>
+                <li> Login </li>
+                <li> Cadastro </li>
+                <li> Contato </li>
+                <li> Pesquisa </li>
+                <li> Comentários </li>
+                <li> Endereço </li>
+                <li> Inscrições em Newsletter </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2> Criando formulário básico </h2>
+
+        <form action=""> 
+
+            <label for="nome"> Nome </label>
+            <input type="text" id="nome" placeholder="Lucas da Silva">
+
+            <button> Enviar </button>
+
+        </form>      
+        
+        <ul>
+            <li> <strong> &lt; label &gt; </strong>: Representa um rótulo/etiqueta para um campo. É um recurso fundamental para acessibilidade. </li>
+
+            <li> <strong> for </strong> : Para conectarmos o nosso rótulo (label) ao input, utilizamos o atributo for. Ele serve para criar a relação com o id do input </li>
+
+            <li> <strong> id </strong> : O atributo ID serve para identificar de forma única um elemento dentro da página. </li>
+
+            <li> <strong> type </strong> : Esse atributo serve para definirmos o tipo de input que desejamos apresentar para o usuário com base no dado que queremos coletar. </li>
+        </ul>
+        </section>
+
+        <section>
+            <h2> Explorando o formulário </h2>
+
+            <form>
+
+                <label for="email"> Email </label>
+                <input type="email" id="email" placeholder="lucas@gmail.com" required name="email">
+
+                <label for="senha"> senha </label>
+                <input type="password" id="senha" placeholder="********" required name="senha">
+
+                <label for="mensagem"> Mensagem </label>
+                <textarea name="mensagem" id="mensagem" placeholder="Deixe seu feedback aqui!" cols="40" rows="10"></textarea>
+
+                <label for="newsletter"> Quero receber novidades por e-mail </label>
+                <input type="checkbox" name="" id="newsletter" name="newsletter">
+
+                <button> Enviar </button>
+            </form>
+        </section>
+
+        <section>
+            <h2> Formulários agrupados </h2>
+
+            <form action="">
+                <fieldset>
+                    <legend> Dados pessoais </legend>
+
+                    <label for="nome"> Nome: </label>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: Lucas da Silva" required> <br>
+
+                    <label for="email"> Email: </label>
+                    <input type="email" name="email" id="email" placeholder="lucas@gmail.com" required> <br>
+
+                    <label for="senha"> Senha: </label>
+                    <input type="password" name="senha" id="senha" placeholder="*******" required> <br>
+
+                    <label for="nascimento"> Data de Nascimento: </label>
+                    <input type="date" name="nascimento" id="nascimento" required> <br>
+
+                    <label for="idade"> Idade: </label>
+                    <input type="number" name="idade" id="idade" placeholder="18" required min="18" max="120"> <br>
+
+                    <label for="telefone"> Telefone: </label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(11) 91234-5678" required> <br>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Endereço: </legend>
+
+                    <label for="rua"> Rua: </label>
+                    <input type="text" id="rua" name="rua" placeholder="Ex: Rua Ali" required> <br>
+
+                    <label for="numero"> Número: </label>
+                    <input type="number" name="numero" id="numero" min="1" placeholder="Ex: 9" required> <br>
+
+                    <label for="estado"> Estado: </label>
+                    <select name="estado" id="estado">
+                        <option value=""> Selecione um estado </option>
+                        <option value="sp"> São Paulo </option>
+                        <option value="rj"> Rio de Janeiro </option>
+                        <option value="mg"> Minas Gerais </option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Preferencias </legend>
+
+                    <label>
+                        <input type="checkbox" name="interesses" value="tecnologia">
+                        Tecnologia
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interesses" value="design">
+                        Design
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interesses" value="progracao">
+                        Programação
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Arquivos </legend>
+
+                    <label for="foto"> Foto de Perfl </label>
+                    <input type="file" name="foto" id="foto">
+                </fieldset>
+
+                <fieldset>
+                    <legend> Termos e Condições </legend>
+
+                    <label> 
+                        <input type="checkbox" name="termos" required>
+                        LI e aceito os termos de uso.
+                    </label>
+                </fieldset>
+
+                <button type="submit"> Criar Cadastro </button>
+                <button type="reset"> Limpar Formulário </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p> &copy; 2026 - Th Pires </p>
+    </footer>
+</body>
+
+</html>
